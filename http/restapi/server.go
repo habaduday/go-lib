@@ -111,7 +111,7 @@ func New(cfg *config.Config, options ...ServerOption) (*Server, error) {
 
 	if srv.openapiJSON != nil {
 		srv.logger.Info("enabling openapi endpoint")
-		srv.router.Mount(docsPath, OpenAPIHandler(srv.openapiJSON, srv.router.NotFoundHandler()))
+		srv.router.Mount(docsPath, OpenAPIHandler(docsPath, srv.openapiJSON, srv.router.NotFoundHandler()))
 	}
 
 	return srv, nil

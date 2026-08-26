@@ -46,6 +46,7 @@ func main() {
 
 	err = run(cfg, logger)
 	if err != nil {
+		logger.Error("service exited with errors", zap.Error(err))
 		_ = logger.Sync()
 		os.Exit(1)
 	}
@@ -119,12 +120,10 @@ func run(cfg *config.Config, logger *zap.Logger) error {
 
 	// ---- Run application ----
 
-	stop := make(chan struct{}, 1)
+	stop := make(chan error, 1)
 	go func() {
 		logger.Info("starting api server")
-		if err := srv.Run(); err != nil {
-			logger.Error("api server error", zap.Error(err))
-		}
+		stop <- srv.Run()
 		close(stop)
 	}()
 
@@ -132,10 +131,10 @@ func run(cfg *config.Config, logger *zap.Logger) error {
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 	select {
 	case <-quit:
-	case <-stop:
+	case err = <-stop:
 	}
 
-	return nil
+	return err
 }
 
 func NewHandler(repo Repository, logger *zap.Logger) http.Handler {

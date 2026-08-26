@@ -51,7 +51,7 @@ func TestParseSpec_WhenReaderFails_ReturnsError(t *testing.T) {
 
 func TestOpenAPIHandler_WhenGetSpec_ThenReturnsSpec(t *testing.T) {
 	spec := `{"openapi":"3.0.0"}`
-	handler := OpenAPIHandler([]byte(spec), nil)
+	handler := OpenAPIHandler("", []byte(spec), nil)
 
 	req := httptest.NewRequest(http.MethodGet, "/openapi.json", nil)
 	rec := httptest.NewRecorder()
@@ -63,7 +63,7 @@ func TestOpenAPIHandler_WhenGetSpec_ThenReturnsSpec(t *testing.T) {
 }
 
 func TestOpenAPIHandler_WhenUnknownPath_ThenReturnsNotFound(t *testing.T) {
-	handler := OpenAPIHandler([]byte(`{"openapi":"3.0.0"}`), nil)
+	handler := OpenAPIHandler("", []byte(`{"openapi":"3.0.0"}`), nil)
 
 	req := httptest.NewRequest(http.MethodGet, "/unknown", nil)
 	rec := httptest.NewRecorder()
