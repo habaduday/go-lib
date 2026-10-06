@@ -8,7 +8,7 @@ Never mention agent's name, model and vendor in commit messages or generated cod
 
 ## Project
 
-- Module: `github.com/vitalyshatskikh/go-lib` (Go 1.26.3)
+- Module: `github.com/habaduday/go-lib` (Go 1.26.3)
 - Shared Go library providing common utilities for typical project: graceful shutdown, env-based config, structured logging (zap), Prometheus metrics, OpenTelemetry tracing, chi-based HTTP server
 
 ## Packages

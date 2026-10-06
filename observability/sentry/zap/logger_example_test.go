@@ -6,9 +6,9 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/vitalyshatskikh/go-lib/config"
-	"github.com/vitalyshatskikh/go-lib/observability/sentry"
-	sentrymock "github.com/vitalyshatskikh/go-lib/observability/sentry/mock"
+	"github.com/habaduday/go-lib/config"
+	"github.com/habaduday/go-lib/observability/sentry"
+	sentrymock "github.com/habaduday/go-lib/observability/sentry/mock"
 )
 
 func ExampleWrapLogger() {

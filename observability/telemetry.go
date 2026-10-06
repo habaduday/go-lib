@@ -17,7 +17,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 func InitTelemetry(ctx context.Context, cfg *config.Config, logger *zap.Logger) (func(context.Context) error, error) {

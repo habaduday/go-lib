@@ -11,7 +11,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.uber.org/zap"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 // InitMetrics starts a Prometheus metrics HTTP server on a separate port

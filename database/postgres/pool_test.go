@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/vitalyshatskikh/go-lib/config"
-	"github.com/vitalyshatskikh/go-lib/database/postgres"
+	"github.com/habaduday/go-lib/config"
+	"github.com/habaduday/go-lib/database/postgres"
 )
 
 func TestNewPGXPool_WhenConfigIsInvalid_ThenError(t *testing.T) {

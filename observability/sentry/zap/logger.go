@@ -7,7 +7,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 // WrapLogger wraps the given zap.Logger with a Sentry core that forwards

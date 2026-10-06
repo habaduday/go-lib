@@ -18,7 +18,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 func setupTestConfig() *config.Config {

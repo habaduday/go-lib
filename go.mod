@@ -1,4 +1,4 @@
-module github.com/vitalyshatskikh/go-lib
+module github.com/habaduday/go-lib
 
 go 1.26.2
 

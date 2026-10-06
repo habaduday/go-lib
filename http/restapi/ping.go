@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 // PingHandler returns an HTTP handler that responds with service status,

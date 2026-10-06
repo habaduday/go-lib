@@ -9,7 +9,7 @@ import (
 	"go.opentelemetry.io/otel"
 	"go.uber.org/zap"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 func TestInitTelemetry_WhenDisabled_ThenReturnsNoopShutdown(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 
 	sentryhttp "github.com/getsentry/sentry-go/http"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 // WrapHandler wraps the provided http.Handler with Sentry HTTP middleware that

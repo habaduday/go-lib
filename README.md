@@ -1,8 +1,7 @@
 # Go-lib
 
-[![codecov](https://codecov.io/gh/vitalyshatskikh/go-lib/branch/main/graph/badge.svg)](https://codecov.io/gh/vitalyshatskikh/go-lib)
-[![Go](https://img.shields.io/github/go-mod/go-version/vitalyshatskikh/go-lib)](https://github.com/vitalyshatskikh/go-lib)
-[![Go Reference](https://pkg.go.dev/badge/github.com/vitalyshatskikh/go-lib.svg)](https://pkg.go.dev/github.com/vitalyshatskikh/go-lib)
+[![Go](https://img.shields.io/github/go-mod/go-version/habaduday/go-lib)](https://github.com/habaduday/go-lib)
+[![Go Reference](https://pkg.go.dev/badge/github.com/habaduday/go-lib.svg)](https://pkg.go.dev/github.com/habaduday/go-lib)
 
 Shared Go library providing common utilities for Go services: environment-based configuration, graceful shutdown, structured logging, Prometheus metrics, OpenTelemetry tracing, a chi-based HTTP server, and PostgreSQL connection pooling with observability.
 
@@ -11,7 +10,7 @@ Shared Go library providing common utilities for Go services: environment-based 
 To run example setup:
 
 ```shell
-git clone github.com/vitalyshatskikh/go-lib
+git clone github.com/habaduday/go-lib
 cd go-lib
 docker compose up -d
 ```
@@ -26,7 +25,7 @@ URLs:
 ## Installation
 
 ```shell
-go get github.com/vitalyshatskikh/go-lib
+go get github.com/habaduday/go-lib
 ```
 
 ## Packages
@@ -182,10 +181,10 @@ import (
 
     "go.uber.org/zap"
 
-    "github.com/vitalyshatskikh/go-lib/closer"
-    "github.com/vitalyshatskikh/go-lib/config"
-    "github.com/vitalyshatskikh/go-lib/http/restapi"
-    "github.com/vitalyshatskikh/go-lib/observability"
+    "github.com/habaduday/go-lib/closer"
+    "github.com/habaduday/go-lib/config"
+    "github.com/habaduday/go-lib/http/restapi"
+    "github.com/habaduday/go-lib/observability"
 )
 
 func main() {

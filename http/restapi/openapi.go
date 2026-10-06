@@ -11,7 +11,7 @@ import (
 	"github.com/go-openapi/runtime/server-middleware/docui"
 	"gopkg.in/yaml.v3"
 
-	"github.com/vitalyshatskikh/go-lib/http/restapi/assets"
+	"github.com/habaduday/go-lib/http/restapi/assets"
 )
 
 const (

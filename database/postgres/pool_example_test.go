@@ -11,8 +11,8 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/vitalyshatskikh/go-lib/config"
-	"github.com/vitalyshatskikh/go-lib/database/postgres"
+	"github.com/habaduday/go-lib/config"
+	"github.com/habaduday/go-lib/database/postgres"
 )
 
 func ExampleNewPGXPool() {

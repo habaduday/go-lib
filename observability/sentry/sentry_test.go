@@ -10,8 +10,8 @@ import (
 	"go.opentelemetry.io/otel"
 	"go.uber.org/zap"
 
-	"github.com/vitalyshatskikh/go-lib/config"
-	"github.com/vitalyshatskikh/go-lib/observability"
+	"github.com/habaduday/go-lib/config"
+	"github.com/habaduday/go-lib/observability"
 )
 
 func TestInitSentry_WhenEmptyDsn_ThenReturnsShutdown(t *testing.T) {

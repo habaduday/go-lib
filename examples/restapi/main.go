@@ -20,14 +20,14 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 	"go.uber.org/zap"
 
-	"github.com/vitalyshatskikh/go-lib/closer"
-	"github.com/vitalyshatskikh/go-lib/config"
-	"github.com/vitalyshatskikh/go-lib/database/postgres"
-	"github.com/vitalyshatskikh/go-lib/http/restapi"
-	"github.com/vitalyshatskikh/go-lib/observability"
-	"github.com/vitalyshatskikh/go-lib/observability/sentry"
-	sentryhttp "github.com/vitalyshatskikh/go-lib/observability/sentry/http"
-	sentryzap "github.com/vitalyshatskikh/go-lib/observability/sentry/zap"
+	"github.com/habaduday/go-lib/closer"
+	"github.com/habaduday/go-lib/config"
+	"github.com/habaduday/go-lib/database/postgres"
+	"github.com/habaduday/go-lib/http/restapi"
+	"github.com/habaduday/go-lib/observability"
+	"github.com/habaduday/go-lib/observability/sentry"
+	sentryhttp "github.com/habaduday/go-lib/observability/sentry/http"
+	sentryzap "github.com/habaduday/go-lib/observability/sentry/zap"
 )
 
 //go:embed openapi.yml

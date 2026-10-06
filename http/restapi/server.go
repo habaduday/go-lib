@@ -12,9 +12,9 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 	"go.uber.org/zap"
 
-	"github.com/vitalyshatskikh/go-lib/http/restapi/middlewares"
+	"github.com/habaduday/go-lib/http/restapi/middlewares"
 
-	"github.com/vitalyshatskikh/go-lib/config"
+	"github.com/habaduday/go-lib/config"
 )
 
 const (
